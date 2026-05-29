@@ -188,7 +188,8 @@ class AnimatedTimelineChart {
     resizeCanvas() {
         const rect = this.canvas.getBoundingClientRect();
         this.canvas.width = rect.width;
-        this.canvas.height = rect.height;
+        //this.canvas.height = rect.height;
+        this.canvas.height = 350; // Giới hạn chiều cao ở 350px
         this.render(this.currentPhase);
     }
     
@@ -221,11 +222,11 @@ class AnimatedTimelineChart {
         // Draw two-column layout
         const midX = this.canvas.width / 2;
         
-        // Left: Line chart
-        this.drawLineChart(data.lineChart, 30, 150, midX - 50, 300, progress);
+        // Left: Line chart (giảm chiều cao từ 300 xuống 180)
+        this.drawLineChart(data.lineChart, 30, 120, midX - 50, 180, progress);
         
-        // Right: Bar chart
-        this.drawBarChart(data.barChart, midX + 20, 150, this.canvas.width - 50, 300, progress);
+        // Right: Bar chart (giảm chiều cao từ 300 xuống 180)
+        this.drawBarChart(data.barChart, midX + 20, 120, this.canvas.width - 50, 180, progress);
         
         if (this.animationProgress < 1) {
             this.animationFrameId = requestAnimationFrame(() => this.animate());

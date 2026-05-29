@@ -240,7 +240,8 @@ a:hover {
     width: 100%;
     height: auto;
     display: block;
-    min-height: 650px;
+    /*min-height: 650px*/
+    min-height: 350px;
     background: white;
     border-radius: 4px;
 }
