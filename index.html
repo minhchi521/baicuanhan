@@ -38,14 +38,19 @@
     <!-- Main Content with Timeline -->
     <section class="timeline-section" id="timeline">
         <div class="container">
+            <!-- Main Timeline Chart -->
+            <div class="main-chart-container">
+                <canvas id="main-timeline-chart"></canvas>
+            </div>
+
             <!-- Timeline Navigation -->
             <div class="timeline-nav">
-                <button class="timeline-btn active" onclick="switchTimeline(0)">Nửa Đầu 2025</button>
-                <button class="timeline-btn" onclick="switchTimeline(1)">Cuối 2025</button>
-                <button class="timeline-btn" onclick="switchTimeline(2)">Đầu 2026</button>
-                <button class="timeline-btn" onclick="switchTimeline(3)">Giữa 2026</button>
-                <button class="timeline-btn" onclick="switchTimeline(4)">Cuối 2026</button>
-                <button class="timeline-btn" onclick="switchTimeline(5)">2027+</button>
+                <button class="timeline-btn active" onclick="switchTimeline(0); updateMainChart(0);">Nửa Đầu 2025</button>
+                <button class="timeline-btn" onclick="switchTimeline(1); updateMainChart(1);">Cuối 2025</button>
+                <button class="timeline-btn" onclick="switchTimeline(2); updateMainChart(2);">Đầu 2026</button>
+                <button class="timeline-btn" onclick="switchTimeline(3); updateMainChart(3);">Giữa 2026</button>
+                <button class="timeline-btn" onclick="switchTimeline(4); updateMainChart(4);">Cuối 2026</button>
+                <button class="timeline-btn" onclick="switchTimeline(5); updateMainChart(5);">2027+</button>
             </div>
 
             <!-- Timeline Content -->
@@ -304,9 +309,7 @@
     </footer>
 
     <!-- Scripts -->
-    <script src="animations.js"></script>
-    <script src="charts.js"></script>
-    <script src="interactions.js"></script>
+    <script src="main-chart.js"></script>
     
     <script>
         // Timeline switching
@@ -321,8 +324,10 @@
                 btn.classList.toggle('active', idx === phase);
             });
             
-            // Initialize appropriate chart
-            initPhaseChart(phase);
+            // Initialize chart for this phase
+            setTimeout(() => {
+                new AnimatedChart(`phase-${phase}-chart`, phase);
+            }, 50);
         }
 
         // Scenario switching
@@ -335,11 +340,6 @@
             });
         }
 
-        // Initialize phase chart
-        function initPhaseChart(phase) {
-            // Charts removed - keeping only content
-        }
-
         // Smooth scroll
         function scrollToSection(id) {
             const element = document.getElementById(id);
@@ -347,6 +347,11 @@
                 element.scrollIntoView({ behavior: 'smooth' });
             }
         }
+
+        // Initialize first phase chart when page loads
+        window.addEventListener('load', () => {
+            new AnimatedChart('phase-0-chart', 0);
+        });
     </script>
 </body>
 </html>
