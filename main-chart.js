@@ -253,14 +253,18 @@ class AnimatedTimelineChart {
         
         // Title
         this.ctx.fillStyle = "#000";
-        this.ctx.font = "bold 18px Arial";
+        this.ctx.font = "bold 16px Arial";
         this.ctx.textAlign = "left";
-        this.ctx.fillText(data.title, padding, 70);
+        this.ctx.fillText(data.title, padding, 65);
         
         // Description
-        this.ctx.font = "12px Arial";
-        this.ctx.fillStyle = "#555";
-        this.wrapText(data.description, padding, 95, this.canvas.width - 60, 18);
+        this.ctx.font = "11px Arial";
+        this.ctx.fillStyle = "#666";
+        this.ctx.textAlign = "left";
+        const descLines = this.getWrappedLines(data.description, this.canvas.width - 60, this.ctx);
+        descLines.forEach((line, idx) => {
+            this.ctx.fillText(line, padding, 85 + idx * 15);
+        });
         
         this.ctx.globalAlpha = 1;
     }
@@ -382,16 +386,20 @@ class AnimatedTimelineChart {
             this.ctx.fillStyle = bar.color;
             this.ctx.fillRect(barX, barY, barWidth, animatedHeight);
             
-            // Value label
+            // Value label (trên thanh)
             this.ctx.fillStyle = "#000";
             this.ctx.font = "bold 11px Arial";
             this.ctx.textAlign = "center";
-            this.ctx.fillText(Math.round(bar.value), barX + barWidth / 2, barY - 5);
+            this.ctx.fillText(Math.round(bar.value), barX + barWidth / 2, barY - 8);
             
-            // Category label
-            this.ctx.fillStyle = "#666";
+            // Category label (dưới thanh, căn trái thẳng lối)
+            this.ctx.fillStyle = "#333";
             this.ctx.font = "10px Arial";
-            this.wrapText(bar.label, barX + barWidth / 2 - 25, chartY + chartHeight + 15, 50, 12);
+            this.ctx.textAlign = "center";
+            const labelLines = bar.label.split(' ');
+            labelLines.forEach((labelLine, lineIdx) => {
+                this.ctx.fillText(labelLine, barX + barWidth / 2, chartY + chartHeight + 12 + lineIdx * 12);
+            });
         });
         
         this.ctx.globalAlpha = 1;
@@ -402,21 +410,43 @@ class AnimatedTimelineChart {
         let line = '';
         this.ctx.font = "11px Arial";
         this.ctx.fillStyle = "#666";
-        this.ctx.textAlign = "center";
+        this.ctx.textAlign = "left";
         
+        let currentY = y;
         for (let i = 0; i < words.length; i++) {
             const testLine = line + (line ? ' ' : '') + words[i];
             const metrics = this.ctx.measureText(testLine);
             
             if (metrics.width > maxWidth && line) {
-                this.ctx.fillText(line, x, y);
+                this.ctx.fillText(line, x, currentY);
                 line = words[i];
-                y += lineHeight;
+                currentY += lineHeight;
             } else {
                 line = testLine;
             }
         }
-        if (line) this.ctx.fillText(line, x, y);
+        if (line) this.ctx.fillText(line, x, currentY);
+    }
+
+    getWrappedLines(text, maxWidth, ctx) {
+        const words = text.split(' ');
+        const lines = [];
+        let line = '';
+        
+        ctx.font = "11px Arial";
+        for (let i = 0; i < words.length; i++) {
+            const testLine = line + (line ? ' ' : '') + words[i];
+            const metrics = ctx.measureText(testLine);
+            
+            if (metrics.width > maxWidth && line) {
+                lines.push(line);
+                line = words[i];
+            } else {
+                line = testLine;
+            }
+        }
+        if (line) lines.push(line);
+        return lines;
     }
 }
 
