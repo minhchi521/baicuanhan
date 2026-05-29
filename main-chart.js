@@ -4,13 +4,13 @@
 
 const chartData = {
     0: {
-        title: "Nửa Đầu 2025: AI Agents Lần Đầu Xuất Hiện",
-        timeline: "Tháng 1-6 2025",
-        description: "Thế giới lần đầu chứng kiến AI agents. Chúng được quảng cáo là trợ lý cá nhân nhưng vẫn còn không ổn định.",
+        title: "Mid 2025: AI Agents First Appear",
+        timeline: "Jan-Jun 2025",
+        description: "The world sees its first AI agents. Marketed as personal assistants but still unreliable. Specialized coding and research agents begin transforming professional domains.",
         
-        // Line chart: Năng lực tính toán
+        // Line chart: Global Computing Power
         lineChart: {
-            title: "Năng Lực Tính Toán Toàn Cầu",
+            title: "Global Computing Power Growth",
             data: [
                 { month: "Jan", value: 5, label: "5×10²⁷" },
                 { month: "Feb", value: 6, label: "6×10²⁷" },
@@ -22,23 +22,23 @@ const chartData = {
             color: "#222"
         },
         
-        // Bar chart: Số công ty & tin cậy
+        // Bar chart: AI Companies & Reliability
         barChart: {
-            title: "Số Công Ty AI vs Độ Tin Cậy",
+            title: "AI Market Metrics",
             bars: [
-                { label: "Công Ty AI", value: 15, color: "#222" },
-                { label: "Độ Tin Cậy (%)", value: 60, color: "#666" },
-                { label: "Chi Phí $/tháng", value: 3, color: "#999" }
+                { label: "AI Companies", value: 15, color: "#222" },
+                { label: "Reliability %", value: 60, color: "#666" },
+                { label: "Cost $/month", value: 3, color: "#999" }
             ]
         }
     },
     1: {
-        title: "Cuối 2025: Siêu Máy Tính AI Lớn Nhất",
-        timeline: "Tháng 7-12 2025",
-        description: "OpenBrain hoàn thành xây dựng các trung tâm dữ liệu khổng lồ. Năng lực tính toán tăng lên hàng nghìn lần.",
+        title: "Late 2025: Megascale AI Infrastructure",
+        timeline: "Jul-Dec 2025",
+        description: "OpenBrain completes construction of the world's largest datacenters. Computing power increases thousandfold. Major AI companies begin the arms race for capabilities.",
         
         lineChart: {
-            title: "Tốc Độ Tăng Năng Lực",
+            title: "Compute Scaling Acceleration",
             data: [
                 { month: "Jul", value: 12, label: "12×10²⁸" },
                 { month: "Aug", value: 18, label: "18×10²⁸" },
@@ -51,21 +51,21 @@ const chartData = {
         },
         
         barChart: {
-            title: "Chi Phí & Nhân Sự",
+            title: "Investment & Resources",
             bars: [
-                { label: "Chi Phí Huấn Luyện (Tỷ $)", value: 5, color: "#222" },
-                { label: "Nhân Viên OpenBrain (K)", value: 5, color: "#666" },
-                { label: "Độ Ổn Định (%)", value: 75, color: "#999" }
+                { label: "Training Cost (B$)", value: 5, color: "#222" },
+                { label: "Employees (K)", value: 5, color: "#666" },
+                { label: "Stability %", value: 75, color: "#999" }
             ]
         }
     },
     2: {
-        title: "Đầu 2026: Tự Động Hóa Lập Trình",
-        timeline: "Tháng 1-3 2026",
-        description: "Nhờ AI agents, OpenBrain tăng tốc độ tiến bộ lên 50%. Nhu cầu quản lý AI teams tăng vọt.",
+        title: "Early 2026: Coding Automation",
+        timeline: "Jan-Mar 2026",
+        description: "AI agents achieve 50% acceleration of algorithmic progress. Junior programmer positions decline sharply. Demand for AI team managers surges 40%.",
         
         lineChart: {
-            title: "Tốc Độ Phát Triển Thuật Toán",
+            title: "Algorithmic Progress Speedup",
             data: [
                 { month: "Jan", value: 35, label: "+35%" },
                 { month: "Feb", value: 42, label: "+42%" },
@@ -78,48 +78,48 @@ const chartData = {
         },
         
         barChart: {
-            title: "Tác Động Thị Trường Lao Động",
+            title: "Labor Market Impact",
             bars: [
-                { label: "Lập Trình Viên Jr Mất Việc (%)", value: 30, color: "#222" },
-                { label: "Nhu Cầu AI Manager (+%)", value: 40, color: "#666" },
-                { label: "Năng Lực Tính Toán (10²⁸)", value: 75, color: "#999" }
+                { label: "Junior Dev Loss %", value: 30, color: "#222" },
+                { label: "AI Manager Need +%", value: 40, color: "#666" },
+                { label: "Compute (10²⁸)", value: 75, color: "#999" }
             ]
         }
     },
     3: {
-        title: "Giữa 2026: Trung Quốc Thức Tỉnh",
-        timeline: "Tháng 4-6 2026",
-        description: "Trung Quốc hợp nhất các công ty AI thành khối thống nhất. Xây dựng khu phát triển tập trung Tianwan.",
+        title: "Mid 2026: China's AI Push",
+        timeline: "Apr-Jun 2026",
+        description: "China centralizes AI research and commits fully to the technology. Massive datacenter constructed at Tianwan. Geopolitical tensions escalate dramatically.",
         
         lineChart: {
-            title: "Cạnh Tranh USA vs Trung Quốc",
+            title: "US-China Compute Parity Gap",
             data: [
-                { month: "Apr", value: 88, label: "USA 88%" },
-                { month: "May", value: 82, label: "USA 82%" },
-                { month: "Jun", value: 75, label: "USA 75%" },
-                { month: "Jul", value: 70, label: "USA 70%" },
-                { month: "Aug", value: 65, label: "USA 65%" },
-                { month: "Sep", value: 60, label: "USA 60%" }
+                { month: "Apr", value: 88, label: "US 88%" },
+                { month: "May", value: 82, label: "US 82%" },
+                { month: "Jun", value: 75, label: "US 75%" },
+                { month: "Jul", value: 70, label: "US 70%" },
+                { month: "Aug", value: 65, label: "US 65%" },
+                { month: "Sep", value: 60, label: "US 60%" }
             ],
             color: "#222"
         },
         
         barChart: {
-            title: "Phân Bố Năng Lực Toàn Cầu",
+            title: "Global AI Distribution",
             bars: [
-                { label: "USA (% Thế giới)", value: 60, color: "#222" },
-                { label: "Trung Quốc (%)", value: 12, color: "#666" },
-                { label: "Độ Trễ Công Nghệ (tháng)", value: 6, color: "#999" }
+                { label: "USA % World", value: 60, color: "#222" },
+                { label: "China %", value: 12, color: "#666" },
+                { label: "Tech Gap Months", value: 6, color: "#999" }
             ]
         }
     },
     4: {
-        title: "Cuối 2026: AI Bắt Đầu Lấy Việc Làm",
-        timeline: "Tháng 7-12 2026",
-        description: "OpenBrain phát hành Agent-1-mini - 10x rẻ hơn. Thị trường chứng khoán tăng 30%. Nhu cầu AI Manager tăng vọt.",
+        title: "Late 2026: AI Labor Displacement",
+        timeline: "Jul-Dec 2026",
+        description: "OpenBrain releases Agent-1-mini at 10x lower cost. Stock market surges 30%. Concerns about AI impact on employment reach mainstream consciousness.",
         
         lineChart: {
-            title: "Tăng Trưởng Kinh Tế & Năng Lượng",
+            title: "Economic & Power Growth",
             data: [
                 { month: "Jul", value: 18, label: "18 GW" },
                 { month: "Aug", value: 22, label: "22 GW" },
@@ -132,21 +132,21 @@ const chartData = {
         },
         
         barChart: {
-            title: "Thị Trường & Xã Hội",
+            title: "Markets & Society",
             bars: [
-                { label: "CK Tăng (%)", value: 30, color: "#222" },
-                { label: "Năng Lượng AI (GW)", value: 38, color: "#666" },
-                { label: "Phát Triển vs 2025 (Lần)", value: 15, color: "#999" }
+                { label: "Stock Gain %", value: 30, color: "#222" },
+                { label: "AI Power GW", value: 38, color: "#666" },
+                { label: "Growth vs 2025x", value: 15, color: "#999" }
             ]
         }
     },
     5: {
-        title: "2027 & Sau: Nước Rẽ Lịch Sử",
-        timeline: "Tháng 1+ 2027",
-        description: "Agent-4 trở thành nhà nghiên cứu siêu nhân. Dấu hiệu lo ngại về sự sắp xếp AI xuất hiện toàn cầu.",
+        title: "2027+: AI Inflection Point",
+        timeline: "Jan 2027+",
+        description: "Agent-4 becomes superhuman AI researcher. Alignment concerns become critical. AI development becomes matter of national security. Government oversight expands.",
         
         lineChart: {
-            title: "Đầu Ra Nghiên Cứu & Doanh Thu",
+            title: "Research Output & Revenue",
             data: [
                 { month: "Q1", value: 20, label: "$20B" },
                 { month: "Q2", value: 25, label: "$25B" },
@@ -159,11 +159,11 @@ const chartData = {
         },
         
         barChart: {
-            title: "Chỉ Số Toàn Cầu",
+            title: "Global Metrics",
             bars: [
-                { label: "Tốc Độ Tiến Bộ (x Con Người)", value: 50, color: "#222" },
-                { label: "Doanh Thu OpenBrain (Tỷ $)", value: 35, color: "#666" },
-                { label: "Nguy Cơ An Niền (%)", value: 85, color: "#999" }
+                { label: "Speed vs Human x", value: 50, color: "#222" },
+                { label: "Revenue Billion $", value: 35, color: "#666" },
+                { label: "Security Risk %", value: 85, color: "#999" }
             ]
         }
     }
@@ -341,9 +341,9 @@ class AnimatedTimelineChart {
             this.ctx.fill();
         });
         
-        // Labels
+        // Labels - căn giữa, thẳng lối
         this.ctx.font = "10px Arial";
-        this.ctx.fillStyle = "#666";
+        this.ctx.fillStyle = "#333";
         this.ctx.textAlign = "center";
         data.data.forEach((point, i) => {
             const px = chartX + (i / (data.data.length - 1)) * chartWidth;
