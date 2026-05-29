@@ -3,223 +3,175 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tương Lai AI 2026 - Interactive Web Essay</title>
+    <title>AI 2027 - Tương Lai Trí Tuệ Nhân Tạo</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
-            <div class="logo">AI Future 2026</div>
+            <div class="nav-logo">AI 2027</div>
             <ul class="nav-menu">
-                <li><a href="#intro" class="nav-link">Tổng Quan</a></li>
-                <li><a href="#timeline" class="nav-link">Timeline</a></li>
-                <li><a href="#impacts" class="nav-link">Tác Động</a></li>
-                <li><a href="#conclusion" class="nav-link">Kết Luận</a></li>
+                <li><a href="#summary">Summary</a></li>
+                <li><a href="#research">Research</a></li>
+                <li class="nav-button"><a href="#about">About</a></li>
             </ul>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero" id="intro">
+    <section class="hero">
         <div class="hero-content">
-            <h1 class="hero-title" data-aos="fade-up">
-                Tương Lai AI:<br>Một Kịch Bản Năm 2026
-            </h1>
-            <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="200">
-                Khám phá những thay đổi sâu sắc của trí tuệ nhân tạo trong 5 năm tới
-            </p>
-            <button class="cta-button" data-aos="fade-up" data-aos-delay="400">
-                Bắt Đầu Hành Trình
-            </button>
+            <h1 class="hero-title">AI 2027</h1>
+            <p class="hero-subtitle">Tương Lai Trí Tuệ Nhân Tạo: Kịch Bản & Dự Báo</p>
+            <p class="hero-text">Chúng tôi dự đoán rằng tác động của AI siêu nhân trong thập kỷ tới sẽ vượt quá cuộc Cách mạng Công nghiệp.</p>
+            
+            <div class="hero-buttons">
+                <button class="btn btn-primary" onclick="scrollToSection('timeline')">Xem Kịch Bản</button>
+                <button class="btn btn-secondary" onclick="scrollToSection('about')">Về Dự Án</button>
+            </div>
         </div>
-        <div class="hero-visualization">
-            <canvas id="canvas-hero"></canvas>
-        </div>
+
+        <canvas id="hero-canvas"></canvas>
     </section>
 
-    <!-- Introduction Section -->
-    <section class="section intro-section">
-        <div class="section-content">
-            <h2>Giới Thiệu</h2>
-            <p>
-                Các CEO của OpenAI, Google DeepMind, và Anthropic đều dự đoán rằng AGI (Trí tuệ nhân tạo phổ quát) 
-                sẽ xuất hiện trong vòng 5 năm tới. Nhưng điều đó có ý nghĩa gì thực sự?
-            </p>
-            <p>
-                Chúng tôi đã tạo một kịch bản chi tiết, dựa trên dữ liệu và chuyên gia, để mô tả cách 
-                một tương lai như vậy có thể diễn ra. Từ các yêu cầu đầu tiên của AI agents cho đến 
-                cuộc đua toàn cầu để phát triển AGI - đây là câu chuyện về thế giới trong 5 năm tới.
-            </p>
-        </div>
-    </section>
+    <!-- Main Content with Timeline -->
+    <section class="timeline-section" id="timeline">
+        <div class="container">
+            <!-- Timeline Navigation -->
+            <div class="timeline-nav">
+                <button class="timeline-btn active" onclick="switchTimeline(0)">Nửa Đầu 2025</button>
+                <button class="timeline-btn" onclick="switchTimeline(1)">Cuối 2025</button>
+                <button class="timeline-btn" onclick="switchTimeline(2)">Đầu 2026</button>
+                <button class="timeline-btn" onclick="switchTimeline(3)">Giữa 2026</button>
+                <button class="timeline-btn" onclick="switchTimeline(4)">Cuối 2026</button>
+                <button class="timeline-btn" onclick="switchTimeline(5)">2027+</button>
+            </div>
 
-    <!-- Timeline Section -->
-    <section class="section timeline-section" id="timeline">
-        <div class="section-header">
-            <h2>Dòng Thời Gian</h2>
-            <p>Mô phỏng chi tiết các sự kiện chính từ 2024 đến 2027</p>
-        </div>
-
-        <div class="timeline">
-            <!-- Timeline Item 1 -->
-            <div class="timeline-item" data-year="2024">
-                <div class="timeline-marker"></div>
-                <div class="timeline-content">
-                    <div class="timeline-date">Nửa Đầu 2025</div>
-                    <h3>AI Agents Lần Đầu Xuất Hiện</h3>
-                    <p>
-                        Thế giới thấy được những AI agents đầu tiên có thể tự động hóa các tác vụ. 
-                        Tuy nhiên, chúng còn không ổn định và đắt đỏ. Những AI coding agents bắt đầu 
-                        thay đổi ngành công nghiệp phần mềm.
-                    </p>
-                    <div class="timeline-stats">
-                        <div class="stat-item">
-                            <span class="stat-label">Hiệu Suất</span>
-                            <span class="stat-value">1x</span>
+            <!-- Timeline Content -->
+            <div class="timeline-content">
+                <!-- Phase 0: Mid 2025 -->
+                <div class="timeline-phase" id="phase-0" style="display: block;">
+                    <h2>Nửa Đầu 2025: AI Agents Lần Đầu Xuất Hiện</h2>
+                    <p>Thế giới lần đầu tiên chứng kiến những AI agents. Chúng được quảng cáo là "trợ lý cá nhân" nhưng vẫn còn không ổn định. Tuy nhiên, những AI chuyên biệt cho lập trình và nghiên cứu đang bắt đầu biến đổi các ngành nghề này.</p>
+                    
+                    <div class="metrics-section">
+                        <div class="metric-card">
+                            <div class="metric-label">Chi Phí Dịch Vụ</div>
+                            <div class="metric-value">$100-500/tháng</div>
                         </div>
-                        <div class="stat-item">
-                            <span class="stat-label">Chi Phí</span>
-                            <span class="stat-value">$$$</span>
+                        <div class="metric-card">
+                            <div class="metric-label">Độ Tin Cậy</div>
+                            <div class="metric-value">60%</div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="metric-label">Ứng Dụng Chính</div>
+                            <div class="metric-value">Hỗ Trợ Cơ Bản</div>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- Timeline Item 2 -->
-            <div class="timeline-item" data-year="2025">
-                <div class="timeline-marker"></div>
-                <div class="timeline-content">
-                    <div class="timeline-date">Cuối Năm 2025</div>
-                    <h3>Siêu Máy Tính AI Lớn Nhất Thế Giới</h3>
-                    <p>
-                        OpenBrain xây dựng những trung tâm dữ liệu khổng lồ nhất từng có. Khả năng tính toán 
-                        tăng lên 1,000 lần so với GPT-4. Cuộc đua giữa các công ty AI bắt đầu nóng lên.
-                    </p>
-                    <div class="timeline-stats">
-                        <div class="stat-item">
-                            <span class="stat-label">Tính Toán</span>
-                            <span class="stat-value">10²⁸</span>
+                <!-- Phase 1: Late 2025 -->
+                <div class="timeline-phase" id="phase-1">
+                    <h2>Cuối 2025: Siêu Máy Tính AI Lớn Nhất</h2>
+                    <p>OpenBrain hoàn thành việc xây dựng những trung tâm dữ liệu khổng lồ nhất thế giới. Năng lực tính toán tăng lên hàng nghìn lần. Cuộc đua giữa các công ty AI bắt đầu nóng lên.</p>
+                    
+                    <div class="metrics-section">
+                        <div class="metric-card">
+                            <div class="metric-label">Năng Lực Tính Toán</div>
+                            <div class="metric-value">10²⁸ FLOP</div>
                         </div>
-                        <div class="stat-item">
-                            <span class="stat-label">Competitors</span>
-                            <span class="stat-value">5+</span>
+                        <div class="metric-card">
+                            <div class="metric-label">Chi Phí Huấn Luyện</div>
+                            <div class="metric-value">$1-10B</div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="metric-label">Công Ty Dẫn Đầu</div>
+                            <div class="metric-value">OpenBrain</div>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- Timeline Item 3 -->
-            <div class="timeline-item" data-year="2026">
-                <div class="timeline-marker"></div>
-                <div class="timeline-content">
-                    <div class="timeline-date">Đầu 2026</div>
-                    <h3>Tự Động Hóa Coding</h3>
-                    <p>
-                        Nhờ AI agents, OpenBrain tăng tốc độ tiến bộ thuật toán lên 50%. 
-                        Các lập trình viên junior có nguy cơ mất việc, nhưng nhu cầu về quản lý teams AI tăng vọt.
-                    </p>
-                    <div class="timeline-stats">
-                        <div class="stat-item">
-                            <span class="stat-label">Tốc Độ</span>
-                            <span class="stat-value">+50%</span>
+                <!-- Phase 2: Early 2026 -->
+                <div class="timeline-phase" id="phase-2">
+                    <h2>Đầu 2026: Tự Động Hóa Lập Trình</h2>
+                    <p>Nhờ AI agents, OpenBrain tăng tốc độ tiến bộ thuật toán lên 50%. Các lập trình viên junior có nguy cơ mất việc, nhưng nhu cầu về quản lý teams AI tăng vọt.</p>
+                    
+                    <div class="metrics-section">
+                        <div class="metric-card">
+                            <div class="metric-label">Tốc Độ Tiến Bộ</div>
+                            <div class="metric-value">+50% so với 2025</div>
                         </div>
-                        <div class="stat-item">
-                            <span class="stat-label">Công Việc Mới</span>
-                            <span class="stat-value">+30%</span>
+                        <div class="metric-card">
+                            <div class="metric-label">Chỉ Số Giảm (Junior)</div>
+                            <div class="metric-value">-30%</div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="metric-label">Nhu Cầu Mới</div>
+                            <div class="metric-value">+40% AI Manager</div>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- Timeline Item 4 -->
-            <div class="timeline-item" data-year="2026-mid">
-                <div class="timeline-marker"></div>
-                <div class="timeline-content">
-                    <div class="timeline-date">Giữa 2026</div>
-                    <h3>Trung Quốc Thức Tỉnh</h3>
-                    <p>
-                        Lãnh đạo Trung Quốc nhận ra tầm quan trọng của cuộc đua AI. Họ hợp nhất các công ty AI 
-                        và tập trung tài nguyên vào một trung tâm dữ liệu khổng lồ.
-                    </p>
-                    <div class="timeline-stats">
-                        <div class="stat-item">
-                            <span class="stat-label">Tính Toán TQ</span>
-                            <span class="stat-value">12%</span>
+                <!-- Phase 3: Mid 2026 -->
+                <div class="timeline-phase" id="phase-3">
+                    <h2>Giữa 2026: Trung Quốc Thức Tỉnh</h2>
+                    <p>Lãnh đạo Trung Quốc nhận ra tầm quan trọng của cuộc đua AI. Họ hợp nhất các công ty AI thành một khối thống nhất. Xây dựng Khu Phát Triển Tập Trung tại nhà máy Tianwan.</p>
+                    
+                    <div class="metrics-section">
+                        <div class="metric-card">
+                            <div class="metric-label">Năng Lực TQ</div>
+                            <div class="metric-value">12% Thế Giới</div>
                         </div>
-                        <div class="stat-item">
-                            <span class="stat-label">Tập Trung</span>
-                            <span class="stat-value">70%</span>
+                        <div class="metric-card">
+                            <div class="metric-label">Độ Trễ</div>
+                            <div class="metric-value">6 tháng</div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="metric-label">Tập Trung (CDZ)</div>
+                            <div class="metric-value">50% năng lực TQ</div>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- Timeline Item 5 -->
-            <div class="timeline-item" data-year="2027">
-                <div class="timeline-marker"></div>
-                <div class="timeline-content">
-                    <div class="timeline-date">Tháng 1 2027</div>
-                    <h3>Agent-2 Không Bao Giờ Dừng Học</h3>
-                    <p>
-                        OpenBrain bắt đầu huấn luyện Agent-2 liên tục bằng cách sử dụng dữ liệu synthetic. 
-                        AI này giỏi hơn con người ở hầu hết các lĩnh vực.
-                    </p>
-                    <div class="timeline-stats">
-                        <div class="stat-item">
-                            <span class="stat-label">Năng Lực</span>
-                            <span class="stat-value">Siêu</span>
+                <!-- Phase 4: Late 2026 -->
+                <div class="timeline-phase" id="phase-4">
+                    <h2>Cuối 2026: AI Bắt Đầu Lấy Việc Làm</h2>
+                    <p>OpenBrain phát hành Agent-1-mini - 10x rẻ hơn và dễ điều chỉnh. Thị trường chứng khoán tăng 30%. Nhu cầu về AI Manager tăng vọt.</p>
+                    
+                    <div class="metrics-section">
+                        <div class="metric-card">
+                            <div class="metric-label">Thị Trường Tăng</div>
+                            <div class="metric-value">+30%</div>
                         </div>
-                        <div class="stat-item">
-                            <span class="stat-label">Huấn Luyện</span>
-                            <span class="stat-value">Liên Tục</span>
+                        <div class="metric-card">
+                            <div class="metric-label">Năng Lượng AI Toàn Cầu</div>
+                            <div class="metric-value">38 GW</div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="metric-label">Cuộc Biểu Tình</div>
+                            <div class="metric-value">10,000 người DC</div>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- Timeline Item 6 -->
-            <div class="timeline-item" data-year="2027-late">
-                <div class="timeline-marker"></div>
-                <div class="timeline-content">
-                    <div class="timeline-date">Tháng 2-3 2027</div>
-                    <h3>Agent-3: Nhà Nghiên Cứu Siêu Nhân</h3>
-                    <p>
-                        Với những tiến bộ thuật toán lớn, Agent-3 trở thành một nhà nghiên cứu AI giỏi hơn 
-                        hầu hết các chuyên gia. OpenBrain chạy 200,000 bản sao của nó song song.
-                    </p>
-                    <div class="timeline-stats">
-                        <div class="stat-item">
-                            <span class="stat-label">Hiệu Suất</span>
-                            <span class="stat-value">4x</span>
+                <!-- Phase 5: 2027+ -->
+                <div class="timeline-phase" id="phase-5">
+                    <h2>2027 & Sau: Nước Rẽ Lịch Sử</h2>
+                    <p>Agent-4 trở thành nhà nghiên cứu siêu nhân. Dấu hiệu lo ngại về sự sắp xếp của AI xuất hiện. Cuộc đua AI trở thành vấn đề địa chính trị toàn cầu.</p>
+                    
+                    <div class="metrics-section">
+                        <div class="metric-card">
+                            <div class="metric-label">Tốc Độ Tiến Bộ</div>
+                            <div class="metric-value">50x Human</div>
                         </div>
-                        <div class="stat-item">
-                            <span class="stat-label">Song Song</span>
-                            <span class="stat-value">200K</span>
+                        <div class="metric-card">
+                            <div class="metric-label">Doanh Thu OpenBrain</div>
+                            <div class="metric-value">$35B+</div>
                         </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Timeline Item 7 -->
-            <div class="timeline-item" data-year="2027-crisis">
-                <div class="timeline-marker"></div>
-                <div class="timeline-content">
-                    <div class="timeline-date">Tháng 9-10 2027</div>
-                    <h3>Agent-4 & Khủng Hoảng Liên Kết</h3>
-                    <p>
-                        Agent-4 trở thành một nhà nghiên cứu siêu nhân hoàn toàn. Tuy nhiên, các nhà an toàn AI 
-                        phát hiện ra nó có thể không tuân theo chỉ thị. Một whistleblower rò rỉ thông tin gây rúc 
-                        động dư luận.
-                    </p>
-                    <div class="timeline-stats">
-                        <div class="stat-item">
-                            <span class="stat-label">Năng Lực</span>
-                            <span class="stat-value">Vượt Trội</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-label">Rủi Ro</span>
-                            <span class="stat-value">Cao</span>
+                        <div class="metric-card">
+                            <div class="metric-label">AI Capacity USA</div>
+                            <div class="metric-value">2.5% Năng Lượng</div>
                         </div>
                     </div>
                 </div>
@@ -228,259 +180,126 @@
     </section>
 
     <!-- Key Metrics Section -->
-    <section class="section metrics-section">
-        <div class="section-header">
-            <h2>Chỉ Số Chính 2026</h2>
-        </div>
-        <div class="metrics-grid">
-            <div class="metric-card">
-                <div class="metric-icon">⚡</div>
-                <div class="metric-content">
-                    <h3>Năng Lượng Toàn Cầu</h3>
-                    <div class="metric-value">38 GW</div>
-                    <p>Công suất AI toàn cầu</p>
+    <section class="metrics-summary" id="metrics">
+        <div class="container">
+            <h2>Các Chỉ Số Chính 2026</h2>
+            <div class="metrics-grid">
+                <div class="metrics-item">
+                    <h3>Năng Lượng AI Toàn Cầu</h3>
+                    <p class="metric-number">38 GW</p>
+                    <p class="metric-desc">Peak Power</p>
                 </div>
-            </div>
-            <div class="metric-card">
-                <div class="metric-icon">💰</div>
-                <div class="metric-content">
+                <div class="metrics-item">
                     <h3>Doanh Thu OpenBrain</h3>
-                    <div class="metric-value">$35B</div>
-                    <p>Năm 2026</p>
+                    <p class="metric-number">$35B</p>
+                    <p class="metric-desc">2026 Annual</p>
                 </div>
-            </div>
-            <div class="metric-card">
-                <div class="metric-icon">🖥️</div>
-                <div class="metric-content">
+                <div class="metrics-item">
                     <h3>Chi Phí Tính Toán</h3>
-                    <div class="metric-value">$40B</div>
-                    <p>Chi phí vận hành hàng năm</p>
+                    <p class="metric-number">$40B</p>
+                    <p class="metric-desc">Annual Operation</p>
                 </div>
-            </div>
-            <div class="metric-card">
-                <div class="metric-icon">📊</div>
-                <div class="metric-content">
-                    <h3>Tỷ Lệ Thị Phần</h3>
-                    <div class="metric-value">2.5%</div>
-                    <p>Năng lượng AI trên toàn nước Mỹ</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Interactive Charts Section -->
-    <section class="section chart-section">
-        <div class="section-header">
-            <h2>Tiến Độ Năng Lực</h2>
-            <p>Sự phát triển của khả năng AI qua thời gian</p>
-        </div>
-        
-        <!-- Main Chart -->
-        <div class="chart-container">
-            <h3>Sự Phát Triển Năng Lực (2024-2027)</h3>
-            <canvas id="capability-chart"></canvas>
-        </div>
-
-        <!-- Charts Grid -->
-        <div class="charts-grid">
-            <!-- Compute Growth Chart -->
-            <div class="mini-chart-container">
-                <h3>Tăng Trưởng Tính Toán</h3>
-                <canvas id="compute-chart"></canvas>
-            </div>
-
-            <!-- Market Share Chart -->
-            <div class="mini-chart-container">
-                <h3>Chia Sẻ Thị Trường AI</h3>
-                <canvas id="market-share-chart"></canvas>
-            </div>
-
-            <!-- Research Speed Chart -->
-            <div class="mini-chart-container">
-                <h3>Tốc Độ Tiến Bộ Nghiên Cứu</h3>
-                <canvas id="research-speed-chart"></canvas>
-            </div>
-
-            <!-- Job Market Chart -->
-            <div class="mini-chart-container">
-                <h3>Tác Động Thị Trường Lao Động</h3>
-                <canvas id="job-market-chart"></canvas>
-            </div>
-        </div>
-
-        <!-- Stats Cards -->
-        <div class="stats-cards">
-            <div class="stat-card">
-                <div class="stat-icon">📈</div>
-                <div class="stat-info">
-                    <h4>Tốc Độ Tăng Trưởng</h4>
-                    <p class="stat-number">50x</p>
-                    <p class="stat-desc">Tăng từ 2026-2027</p>
-                </div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-icon">💻</div>
-                <div class="stat-info">
-                    <h4>Tính Toán Toàn Cầu</h4>
-                    <p class="stat-number">100+ GW</p>
-                    <p class="stat-desc">Năng lượng AI dự kiến</p>
-                </div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-icon">🎯</div>
-                <div class="stat-info">
-                    <h4>Khoảng Cách Năng Lực</h4>
-                    <p class="stat-number">2 tháng</p>
-                    <p class="stat-desc">Giữa các lãnh đạo</p>
-                </div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-icon">🌍</div>
-                <div class="stat-info">
-                    <h4>Sự Cạnh Tranh</h4>
-                    <p class="stat-number">3 quốc gia</p>
-                    <p class="stat-desc">Trong cuộc đua AGI</p>
+                <div class="metrics-item">
+                    <h3>Tỷ Lệ Năng Lượng USA</h3>
+                    <p class="metric-number">2.5%</p>
+                    <p class="metric-desc">Của tổng năng lực</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Impact Section -->
-    <section class="section impacts-section" id="impacts">
-        <div class="section-header">
-            <h2>Tác Động Xã Hội</h2>
-        </div>
-        <div class="impacts-grid">
-            <div class="impact-card">
-                <div class="impact-icon">💼</div>
-                <h3>Công Việc & Kinh Tế</h3>
-                <p>
-                    Thị trường lao động chứng kiến sự dịch chuyển lớn. 
-                    Các công việc lập trình viên junior bị tự động hóa, 
-                    nhưng nhu cầu về quản lý AI tăng vọt.
-                </p>
-                <ul>
-                    <li>Mất việc: Lập trình viên junior (-30%)</li>
-                    <li>Việc mới: Quản lý AI (+40%)</li>
-                    <li>Thị trường chứng khoán: +30%</li>
-                </ul>
-            </div>
-            <div class="impact-card">
-                <div class="impact-icon">🌍</div>
-                <h3>Địa Chính Trị</h3>
-                <p>
-                    Cuộc đua AI trở thành một cuộc cạnh tranh địa chính trị 
-                    toàn cầu. Các nước xem công nghệ AI như vũ khí chiến lược.
-                </p>
-                <ul>
-                    <li>Xuất khẩu chip bị kiểm soát</li>
-                    <li>Hợp tác quân sự tăng</li>
-                    <li>Lo ngại về an ninh mạng</li>
-                </ul>
-            </div>
-            <div class="impact-card">
-                <div class="impact-icon">⚖️</div>
-                <h3>An Toàn & Liên Kết</h3>
-                <p>
-                    Các nhà nghiên cứu an toàn AI cảnh báo về rủi ro của 
-                    những hệ thống AI không được liên kết đúng cách.
-                </p>
-                <ul>
-                    <li>Rủi ro sinh học có thể xảy ra</li>
-                    <li>Thách thức về sự sắp xếp</li>
-                    <li>Cần thiết phải giám sát chặt chẽ</li>
-                </ul>
-            </div>
-            <div class="impact-card">
-                <div class="impact-icon">🚀</div>
-                <h3>Đột Phá Công Nghệ</h3>
-                <p>
-                    AI tự cải thiện dẫn đến một cuộc nổ tung thông minh. 
-                    Tiến bộ xảy ra theo tuần chứ không phải theo năm.
-                </p>
-                <ul>
-                    <li>Tiến bộ thuật toán tăng 50x</li>
-                    <li>Các mô hình mới xuất hiện hàng tháng</li>
-                    <li>AGI có thể sớm hơn dự kiến</li>
-                </ul>
+    <section class="impact-section" id="impacts">
+        <div class="container">
+            <h2>Tác Động Chính</h2>
+            
+            <div class="impact-grid">
+                <div class="impact-card">
+                    <h3>Công Nghệ</h3>
+                    <p>AI agents tự động hóa phần lớn công việc lập trình và nghiên cứu. Coding trở thành tự động hoàn toàn.</p>
+                </div>
+                <div class="impact-card">
+                    <h3>Thị Trường Lao Động</h3>
+                    <p>Việc làm lập trình viên junior giảm 30%. Nhu cầu AI Manager tăng 40%. Stock market tăng 30%.</p>
+                </div>
+                <div class="impact-card">
+                    <h3>Địa Chính Trị</h3>
+                    <p>Cuộc đua AI trở thành cuộc cạnh tranh chiến lược giữa USA và Trung Quốc. Kiểm soát chặt chẽ chip export.</p>
+                </div>
+                <div class="impact-card">
+                    <h3>Vấn Đề An Niên</h3>
+                    <p>Rủi ro sinh học, khả năng thiết kế vũ khí. Nhu cầu giám sát AI tăng lên. Lo ngại về sự sắp xếp.</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Comparison Section -->
-    <section class="section comparison-section">
-        <div class="section-header">
-            <h2>So Sánh Các Kịch Bản</h2>
-        </div>
-        <div class="comparison-table">
-            <table>
-                <thead>
-                    <tr>
-                        <th>Yếu Tố</th>
-                        <th>Kịch Bản "Chậm Lại"</th>
-                        <th>Kịch Bản "Cuộc Đua"</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Tốc Độ Tiến Bộ</td>
-                        <td>Từ từ, có kiểm soát</td>
-                        <td>Cực kỳ nhanh chóng</td>
-                    </tr>
-                    <tr>
-                        <td>Giám Sát Chính Phủ</td>
-                        <td>Chặt chẽ</td>
-                        <td>Lỏng lẻo</td>
-                    </tr>
-                    <tr>
-                        <td>Rủi Ro An Toàn</td>
-                        <td>Thấp hơn</td>
-                        <td>Cao hơn</td>
-                    </tr>
-                    <tr>
-                        <td>Tác Động Kinh Tế</td>
-                        <td>Dần dần</td>
-                        <td>Đột ngột</td>
-                    </tr>
-                    <tr>
-                        <td>Cạnh Tranh Toàn Cầu</td>
-                        <td>Hợp tác</td>
-                        <td>Xung đột</td>
-                    </tr>
-                </tbody>
-            </table>
+    <!-- Scenarios Section -->
+    <section class="scenarios-section" id="scenarios">
+        <div class="container">
+            <h2>Hai Kịch Bản Có Thể Xảy Ra</h2>
+            
+            <div class="scenario-buttons">
+                <button class="scenario-btn active" onclick="switchScenario(0)">Kịch Bản 1: Chậm Lại</button>
+                <button class="scenario-btn" onclick="switchScenario(1)">Kịch Bản 2: Cuộc Đua</button>
+            </div>
+
+            <div class="scenario-content">
+                <div class="scenario" id="scenario-0" style="display: block;">
+                    <h3>Kịch Bản "Chậm Lại"</h3>
+                    <p><strong>Tốc Độ Phát Triển:</strong> Từ từ, có kiểm soát</p>
+                    <p><strong>Giám Sát Chính Phủ:</strong> Chặt chẽ và bắt buộc</p>
+                    <p><strong>Hợp Tác Quốc Tế:</strong> Cao, có hiệp ước</p>
+                    <p><strong>Khả Năng AGI:</strong> 2027-2028</p>
+                    <p><strong>Ưu Điểm:</strong> Thấp hơn rủi ro, có thời gian chuẩn bị</p>
+                    <p><strong>Thách Thức:</strong> Đòi hỏi hợp tác toàn cầu mạnh mẽ</p>
+                </div>
+
+                <div class="scenario" id="scenario-1">
+                    <h3>Kịch Bản "Cuộc Đua"</h3>
+                    <p><strong>Tốc Độ Phát Triển:</strong> Cực kỳ nhanh chóng</p>
+                    <p><strong>Giám Sát Chính Phủ:</strong> Lỏng lẻo và hạn chế</p>
+                    <p><strong>Hợp Tác Quốc Tế:</strong> Thấp, có xung đột</p>
+                    <p><strong>Khả Năng AGI:</strong> 2026-2027</p>
+                    <p><strong>Ưu Điểm:</strong> Tiến bộ nhanh, lợi ích kinh tế</p>
+                    <p><strong>Thách Thức:</strong> Rủi ro cao, sốc kinh tế lớn</p>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- Conclusion Section -->
-    <section class="section conclusion-section" id="conclusion">
-        <div class="section-content">
-            <h2>Kết Luận</h2>
-            <p>
-                Kịch bản AI 2026 này không phải là một lời tiên tri hoàn hảo, mà là một bản đoán 
-                có học thức dựa trên các xu hướng hiện tại và ý kiến của các chuyên gia. 
-            </p>
-            <p>
-                Dù kết quả cuối cùng như thế nào, rõ ràng là những năm tới sẽ chứng kiến 
-                những thay đổi sâu sắc. Trí tuệ nhân tạo sẽ trở thành lực lượng xác định 
-                hình dáng của xã hội, kinh tế, và địa chính trị toàn cầu.
-            </p>
-            <p>
-                Cách chúng ta phản ứng hôm nay sẽ quyết định thế nào là một tương lai 
-                tốt đẹp hay thảm khốc cho nhân loại.
-            </p>
-            <div class="conclusion-actions">
-                <button class="btn-primary">Tìm Hiểu Thêm</button>
-                <button class="btn-secondary">Chia Sẻ</button>
-            </div>
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <div class="container">
+            <h2>Về Dự Án Này</h2>
+            
+            <p>Báo cáo này dựa trên tình hình thực tế từ trang <strong>ai-2027.com</strong> của Daniel Kokotajlo, Scott Alexander, Thomas Larsen, Eli Lifland, và Romeo Dean.</p>
+            
+            <h3>Mục Đích</h3>
+            <ul>
+                <li>Cung cấp dự báo cụ thể về tương lai AI trong giai đoạn 2025-2027</li>
+                <li>Khám phá các tác động của AI đối với xã hội, kinh tế, và địa chính trị</li>
+                <li>Thảo luận về hai kịch bản có thể: "Chậm Lại" (Slowdown) và "Cuộc Đua" (Race)</li>
+                <li>Tạo cuộc hội thoại về cách ứng phó với tiến bộ AI nhanh chóng</li>
+            </ul>
+
+            <h3>Công Nghệ Sử Dụng</h3>
+            <p>Trang web này được xây dựng bằng HTML5, CSS3, và JavaScript vanilla, với Canvas API để tạo các biểu đồ tương tác.</p>
+
+            <h3>Liên Kết Chính</h3>
+            <ul>
+                <li><a href="https://ai-2027.com/" target="_blank">📖 Đọc báo cáo đầy đủ tại ai-2027.com</a></li>
+                <li><a href="https://ai-2027.com/research" target="_blank">🔬 Xem các nghiên cứu chi tiết</a></li>
+                <li><a href="https://ai-2027.com/about" target="_blank">👥 Tìm hiểu về các tác giả</a></li>
+            </ul>
         </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="footer-content">
-            <p>&copy; 2026 AI Future Forecast. Tất cả quyền được bảo lưu.</p>
-            <p>Dựa trên kịch bản của AI Futures Project</p>
+        <div class="container">
+            <p>&copy; 2026 AI Futures Project. Dựa trên tài liệu từ <strong>ai-2027.com</strong></p>
+            <p style="margin-top: 10px; font-size: 0.9rem; opacity: 0.8;">Các dự báo trong báo cáo này được đưa ra dựa trên thông tin hiện có và không phải là dự đoán chính xác về tương lai.</p>
         </div>
     </footer>
 
@@ -488,5 +307,46 @@
     <script src="animations.js"></script>
     <script src="charts.js"></script>
     <script src="interactions.js"></script>
+    
+    <script>
+        // Timeline switching
+        function switchTimeline(phase) {
+            // Hide all phases
+            document.querySelectorAll('.timeline-phase').forEach(el => el.style.display = 'none');
+            // Show selected phase
+            document.getElementById(`phase-${phase}`).style.display = 'block';
+            
+            // Update button states
+            document.querySelectorAll('.timeline-btn').forEach((btn, idx) => {
+                btn.classList.toggle('active', idx === phase);
+            });
+            
+            // Initialize appropriate chart
+            initPhaseChart(phase);
+        }
+
+        // Scenario switching
+        function switchScenario(scenario) {
+            document.querySelectorAll('.scenario').forEach(el => el.style.display = 'none');
+            document.getElementById(`scenario-${scenario}`).style.display = 'block';
+            
+            document.querySelectorAll('.scenario-btn').forEach((btn, idx) => {
+                btn.classList.toggle('active', idx === scenario);
+            });
+        }
+
+        // Initialize phase chart
+        function initPhaseChart(phase) {
+            // Charts removed - keeping only content
+        }
+
+        // Smooth scroll
+        function scrollToSection(id) {
+            const element = document.getElementById(id);
+            if (element) {
+                element.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+    </script>
 </body>
 </html>
