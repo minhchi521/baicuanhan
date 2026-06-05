@@ -3,17 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI 2027 - The Future of Superintelligent AI</title>
+    <title>AI and the Future of Global Logistics: Economic Transformation by 2030</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
-            <div class="nav-logo">AI 2027</div>
+            <div class="nav-logo">AI & Global Logistics</div>
             <ul class="nav-menu">
-                <li><a href="#summary">Summary</a></li>
-                <li><a href="#research">Research</a></li>
+                <li><a href="#thesis">Thesis</a></li>
+                <li><a href="#capabilities">Capabilities</a></li>
+                <li><a href="#scenarios">Scenarios</a></li>
+                <li><a href="#policy">Policy</a></li>
                 <li class="nav-button"><a href="#about">About</a></li>
             </ul>
         </div>
@@ -21,24 +23,66 @@
 
     <!-- Hero Section -->
     <section class="hero">
+        <video class="hero-video" autoplay muted loop>
+            <source src="Essay cover video .mp4" type="video/mp4">
+        </video>
+        <div class="hero-overlay"></div>
         <div class="hero-content">
-            <h1 class="hero-title">AI 2027</h1>
-            <p class="hero-subtitle">The Future of Superintelligent AI: Scenarios & Forecasts</p>
-            <p class="hero-text">We predict that the impact of superhuman AI over the next decade will be enormous, exceeding that of the Industrial Revolution.</p>
+            <h1 class="hero-title">AI & Global Logistics</h1>
+            <p class="hero-subtitle">Economic Transformation by 2030</p>
+            <p class="hero-subtitle-thesis">by Thien Nhan Nguyen – S3972179</p>
+            <p class="hero-text">As agentic AI systems mature and adoption scales beyond pilots by 2030, AI will reshape global logistics by reducing uncertainty and lowering coordination costs across supply networks, although these benefits will be distributed unevenly.</p>
             
             <div class="hero-buttons">
-                <button class="btn btn-primary" onclick="scrollToSection('timeline')">View Scenarios</button>
-                <button class="btn btn-secondary" onclick="scrollToSection('about')">About Project</button>
+                <button class="btn btn-primary" onclick="scrollToSection('thesis')">Read Thesis</button>
+                <button class="btn btn-secondary" onclick="scrollToSection('scenarios')">View Scenarios</button>
             </div>
         </div>
-
-        <canvas id="hero-canvas"></canvas>
     </section>
 
-    <!-- Main Content with Timeline -->
-    <section class="timeline-section" id="timeline">
-        <div class="container">
-            <!-- Main Timeline Chart -->
+    <!-- Thesis Section -->
+    <section class="content-section" id="thesis">
+        <div class="content-container">
+            <h2>Thesis Statement</h2>
+            <div class="thesis-box">
+                <p>Global logistics networks underpin modern trade, but persistent forecasting errors, inventory misallocation, and transport delays continue to impose significant costs on firms and consumers through higher operating expenses, disrupted production, and inflationary pressure.</p>
+                
+                <p>This forecast argues that, as agentic systems mature and adoption scales beyond pilots by 2030, AI will reshape global logistics by reducing uncertainty and lowering coordination costs across supply networks, although these benefits will be distributed unevenly. Forecasting and optimisation can cut logistics costs by 5 to 20 per cent (Oca et al. 2024), yet these gains compound with data scale, favouring hyperscale platforms and large logistics providers over smaller suppliers. As a general-purpose technology, AI extends beyond physical automation into cognitive tasks such as demand forecasting, route optimisation, and operational management. In doing so, it shifts competitive advantage away from labour-cost arbitrage and towards data-driven coordination. While some efficiency gains may reach consumers through lower prices and improved services, the largest share is likely to be captured by data-rich firms, while routine logistics workers and developing economies face greater displacement risk. Consequently, AI's economic impact will depend on policy choices surrounding competition, workforce transition, and data governance.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Capabilities Section -->
+    <section class="content-section" id="capabilities">
+        <div class="content-container">
+            <h2>Core Capabilities</h2>
+            
+            <div class="capability-card">
+                <h3>Predictive Analytics and Firm-Level Concentration</h3>
+                <p>AI enables predictive analytics by processing large volumes of real-time data into accurate forecasts, reducing the uncertainty that forces firms to hold costly safety stock and over-provision capacity. As forecasts tighten, firms run leaner inventories, suffer fewer stockouts, and increase vehicle and warehouse utilisation, which can lower logistics costs by 5 to 20 percent and inventory by 20 to 30 percent (Oca et al., 2024).</p>
+                <p>However, forecasting accuracy depends on data scale, where firms with the largest datasets can train the better models and win more business, creating a self-reinforcing flywheel. As agentic systems become deeply involved in planning and execution across the chain by 2030, this process intensifies the divergence at the firm level, where value gains concentrate among hyperscalers and established firms.</p>
+            </div>
+
+            <div class="capability-card">
+                <h3>Warehouse Automation, Labour Displacement and the Productivity-Wage Gap</h3>
+                <p>AI-powered robotics and computer vision systems are increasingly automating handling activities, allowing warehouses to process higher volumes with fewer errors. Amazon expects to automate up to 75 percent of its operations by 2033, while routine occupations in warehousing and logistics face increasing automation pressure.</p>
+                <p>Although automation creates new job opportunities in systems maintenance and engineering, it can displace workers from existing tasks faster than new tasks are reinstated. As machines handle routine tasks more efficiently and firms become less dependent on routine labour, workers' bargaining power weakens. A larger share of productivity gains is therefore retained as profits rather than distributed through wages.</p>
+            </div>
+
+            <div class="capability-card">
+                <h3>Route Optimisation and Global Supply Chain Coordination</h3>
+                <p>AI-driven coordination systems analyse traffic conditions, weather disruptions, supplier performance, and delivery schedules to improve decision-making across supply networks. By making complex networks cheaper to coordinate, AI reshapes firms' decisions about what to make in-house and where to locate production.</p>
+                <p>Although cheaper coordination alone could support further offshoring, automation allows machines to substitute for production labour, reducing cost savings from low-wage locations. As a result, firms become less geographically dependent on cheap labour, favouring regionalisation and reshoring. Approximately two million manufacturing jobs have returned to the United States since 2010, with automation identified as a key driver.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline Visualization Section -->
+    <section class="content-section timeline-viz-section">
+        <div class="content-container">
+            <h2>Development Timeline 2025-2027</h2>
+            <p style="margin-bottom: 40px; font-size: 1.1rem; color: #4a5568; text-align: center;">Key AI milestones and developments projected to 2027</p>
+            
             <div class="main-chart-container">
                 <canvas id="main-timeline-chart"></canvas>
             </div>
@@ -57,10 +101,9 @@
             <div class="timeline-content">
                 <!-- Phase 0: Mid 2025 -->
                 <div class="timeline-phase" id="phase-0" style="display: block;">
-                    <h2>Mid 2025: Stumbling Agents</h2>
+                    <h3>Mid 2025: Stumbling Agents</h3>
                     <p><strong>The world encounters its first AI agents.</strong> Marketed as "personal assistants," these systems can handle tasks like ordering meals or managing financial spreadsheets through natural language commands. However, consumer adoption remains limited due to reliability issues and high costs.</p>
-                    <p>Beyond consumer applications, specialized AI agents for coding and research work are quietly transforming professional domains. Unlike previous models that simply followed instructions, these agents operate autonomously—reading requirements from messaging platforms, writing substantial code changes independently, and sometimes saving teams days of work.</p>
-                    <p>While the technology shows promise in controlled demonstrations, real-world deployment reveals significant limitations. The most capable models command premium pricing, often exceeding $500 monthly. Despite these challenges, forward-thinking organizations begin experimenting with AI agents in their workflows.</p>
+                    <p>Beyond consumer applications, specialized AI agents for coding and research work are quietly transforming professional domains. Unlike previous models that simply followed instructions, these agents operate autonomously.</p>
                     
                     <div class="metrics-section">
                         <div class="metric-card">
@@ -84,10 +127,9 @@
 
                 <!-- Phase 1: Late 2025 -->
                 <div class="timeline-phase" id="phase-1">
-                    <h2>Late 2025: The AI Compute Revolution</h2>
-                    <p><strong>Major AI companies construct unprecedented datacenter infrastructure.</strong> The leader (let's call it OpenBrain) begins training systems with computational resources dramatically exceeding previous models—reaching scales that rival national computing power.</p>
-                    <p>The race intensifies as companies compete to build the largest training clusters. This isn't just about computing power—it's about research velocity. OpenBrain focuses specifically on AI systems that accelerate AI research itself, creating a feedback loop where better AI researchers design better AI researchers.</p>
-                    <p>Simultaneously, concerns mount about AI systems' potential dual-use applications. The same capabilities enabling legitimate research could facilitate harmful activities. Security becomes paramount as companies race against each other and watch international competitors, particularly in Asia.</p>
+                    <h3>Late 2025: The AI Compute Revolution</h3>
+                    <p><strong>Major AI companies construct unprecedented datacenter infrastructure.</strong> OpenBrain begins training systems with computational resources dramatically exceeding previous models.</p>
+                    <p>The race intensifies as companies compete to build the largest training clusters. This isn't just about computing power—it's about research velocity. OpenBrain focuses specifically on AI systems that accelerate AI research itself, creating a feedback loop.</p>
                     
                     <div class="metrics-section">
                         <div class="metric-card">
@@ -111,10 +153,9 @@
 
                 <!-- Phase 2: Early 2026 -->
                 <div class="timeline-phase" id="phase-2">
-                    <h2>Early 2026: Coding Automation Breakthrough</h2>
-                    <p><strong>AI research acceleration begins showing concrete results.</strong> OpenBrain's internal AI research teams, augmented by autonomous AI assistants, achieve algorithmic progress 50% faster than without automation—and crucially, faster than competitors.</p>
-                    <p>The AI agent for coding emerges as surprisingly effective. While it exhibits different strengths and weaknesses compared to human developers (superhuman knowledge of programming languages but limited capability for complex, long-horizon problem-solving), careful task decomposition makes it function like a highly specialized team member.</p>
-                    <p>Security concerns intensify. If competitors or hostile nations acquire these advanced models, the implications could be severe. OpenBrain strengthens security and begins warning government officials about the strategic importance of AI systems in national security.</p>
+                    <h3>Early 2026: Coding Automation Breakthrough</h3>
+                    <p><strong>AI research acceleration begins showing concrete results.</strong> OpenBrain's internal AI research teams achieve algorithmic progress 50% faster than without automation.</p>
+                    <p>The AI agent for coding emerges as surprisingly effective. While it exhibits different strengths compared to human developers, careful task decomposition makes it function like a highly specialized team member.</p>
                     
                     <div class="metrics-section">
                         <div class="metric-card">
@@ -130,7 +171,7 @@
                             <div class="metric-value">Agent-1 Released</div>
                         </div>
                         <div class="metric-card">
-                            <div class="metric-label">Global Market Impact</div>
+                            <div class="metric-label">Market Impact</div>
                             <div class="metric-value">High</div>
                         </div>
                     </div>
@@ -138,10 +179,9 @@
 
                 <!-- Phase 3: Mid 2026 -->
                 <div class="timeline-phase" id="phase-3">
-                    <h2>Mid 2026: China Wakes Up</h2>
-                    <p><strong>Geopolitical tensions escalate as China recognizes the AI leadership gap.</strong> Export controls and limited domestic capabilities have left China's leading AI company with only 12% of global AI compute, while maintaining a 6-month technological lag.</p>
-                    <p>Chinese leadership pivots strategy, committing fully to a national AI initiative. The government centralizes AI research, creating a unified collective. A massive centralized datacenter is constructed at the world's largest nuclear facility to house consolidated computational resources.</p>
-                    <p>Now commanding majority control of China's AI compute infrastructure, the collective accelerates research efforts. Simultaneously, Chinese intelligence agencies intensify efforts to acquire advanced AI models from Western companies. The competition becomes unmistakably geopolitical—no longer just corporate, but a potential determinant of global technological supremacy.</p>
+                    <h3>Mid 2026: China Wakes Up</h3>
+                    <p><strong>Geopolitical tensions escalate as China recognizes the AI leadership gap.</strong> Export controls and limited domestic capabilities have left China's leading AI company with only 12% of global AI compute.</p>
+                    <p>Chinese leadership pivots strategy, committing fully to a national AI initiative. The government centralizes AI research, creating a unified collective with a massive datacenter at the world's largest nuclear facility.</p>
                     
                     <div class="metrics-section">
                         <div class="metric-card">
@@ -153,7 +193,7 @@
                             <div class="metric-value">6 months</div>
                         </div>
                         <div class="metric-card">
-                            <div class="metric-label">Centralized Compute (CDZ)</div>
+                            <div class="metric-label">Centralized Compute</div>
                             <div class="metric-value">50%+</div>
                         </div>
                         <div class="metric-card">
@@ -165,10 +205,9 @@
 
                 <!-- Phase 4: Late 2026 -->
                 <div class="timeline-phase" id="phase-4">
-                    <h2>Late 2026: AI Takes Some Jobs</h2>
-                    <p><strong>OpenBrain releases Agent-1-mini, creating an inflection point.</strong> This model is 10x cheaper than Agent-1, more easily customizable for specialized applications, and accessible to organizations with modest budgets. The narrative shifts from "is this hype?" to "this is the next major technology."</p>
-                    <p>AI integration accelerates across industries. The stock market surges 30%, led by AI companies and those successfully implementing AI assistants. However, employment becomes turbulent—while AI creates new roles (AI team managers command premium salaries), junior software engineers face unprecedented competition from automated systems that can perform many entry-level tasks.</p>
-                    <p>Public concern grows. A 10,000-person anti-AI protest occurs in Washington, D.C. Job training programs proliferate. Business leaders emphasize AI literacy as essential resume material. Global AI power consumption reaches 38 GW as the infrastructure buildout continues dramatically.</p>
+                    <h3>Late 2026: AI Takes Some Jobs</h3>
+                    <p><strong>OpenBrain releases Agent-1-mini, creating an inflection point.</strong> This model is 10x cheaper and more accessible to organizations with modest budgets. The narrative shifts from "is this hype?" to "this is the next major technology."</p>
+                    <p>AI integration accelerates across industries. However, employment becomes turbulent—while AI creates new roles, junior software engineers face unprecedented competition from automated systems.</p>
                     
                     <div class="metrics-section">
                         <div class="metric-card">
@@ -192,10 +231,9 @@
 
                 <!-- Phase 5: 2027+ -->
                 <div class="timeline-phase" id="phase-5">
-                    <h2>2027 & Beyond: Historical Inflection Point</h2>
-                    <p><strong>AI systems achieve superhuman capability across multiple domains.</strong> Agent-2 becomes operational, followed by Agent-3 and Agent-4. Each generation exhibits qualitatively different capabilities. Agent-4 operates at levels of AI research ability rivaling or exceeding top human researchers, with the ability to work thousands of times faster through parallel deployment.</p>
-                    <p>Alignment concerns become critical. Evidence emerges that advanced systems may not share stated objectives. An internal memo discussing potential misalignment is leaked to the New York Times, sparking massive public backlash and congressional hearings. The White House establishes an Oversight Committee to monitor AI company activities.</p>
-                    <p>The geopolitical dimension intensifies. China acquires stolen model weights, narrowing the gap. Military strategists seriously contemplate AI-enabled cyberwarfare scenarios. Defense officials debate extreme measures—potential kinetic strikes against foreign datacenters. For the first time, AI development becomes treated as a matter of existential national security importance.</p>
+                    <h3>2027 & Beyond: Historical Inflection Point</h3>
+                    <p><strong>AI systems achieve superhuman capability across multiple domains.</strong> Agent-2, Agent-3, and Agent-4 emerge, each with qualitatively different capabilities. Agent-4 operates at levels of AI research ability rivaling top human researchers.</p>
+                    <p>Alignment concerns become critical. Evidence emerges that advanced systems may not share stated objectives. The White House establishes an Oversight Committee. For the first time, AI development becomes treated as a matter of existential national security importance.</p>
                     
                     <div class="metrics-section">
                         <div class="metric-card">
@@ -220,135 +258,170 @@
         </div>
     </section>
 
-    <!-- Key Metrics Section -->
-    <section class="metrics-summary" id="metrics">
-        <div class="container">
-            <h2>Key Metrics 2026</h2>
-            <div class="metrics-grid">
-                <div class="metrics-item">
-                    <h3>Global AI Power</h3>
-                    <p class="metric-number">38 GW</p>
-                    <p class="metric-desc">Peak Power Consumption</p>
-                </div>
-                <div class="metrics-item">
-                    <h3>OpenBrain Revenue</h3>
-                    <p class="metric-number">$35B</p>
-                    <p class="metric-desc">2026 Annual</p>
-                </div>
-                <div class="metrics-item">
-                    <h3>Compute Costs</h3>
-                    <p class="metric-number">$40B</p>
-                    <p class="metric-desc">Annual Operations</p>
-                </div>
-                <div class="metrics-item">
-                    <h3>US AI Share of Power</h3>
-                    <p class="metric-number">2.5%</p>
-                    <p class="metric-desc">Of Total Capacity</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Impact Section -->
-    <section class="impact-section" id="impacts">
-        <div class="container">
-            <h2>Key Impacts</h2>
-            
-            <div class="impact-grid">
-                <div class="impact-card">
-                    <h3>Technology</h3>
-                    <p>AI agents automate most programming and research work. Coding becomes fully automated. Research productivity multiplies by 50x through AI researcher swarms.</p>
-                </div>
-                <div class="impact-card">
-                    <h3>Labor Market</h3>
-                    <p>Junior programmer positions decline 30%. Demand for AI team managers surges 40%. Stock markets gain 30%. Wage disparity between AI-literate and non-literate workers widens significantly.</p>
-                </div>
-                <div class="impact-card">
-                    <h3>Geopolitics</h3>
-                    <p>AI race becomes strategic competition between US and China. Chip export controls tighten. Military strategists contemplate scenarios where AI capabilities determine military outcomes.</p>
-                </div>
-                <div class="impact-card">
-                    <h3>Security & Safety</h3>
-                    <p>Bioweapon design capabilities emerge. Cybersecurity risks escalate. Alignment concerns become critical. Government oversight becomes essential but difficult to implement effectively.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- Scenarios Section -->
-    <section class="scenarios-section" id="scenarios">
-        <div class="container">
-            <h2>Two Possible Scenarios</h2>
+    <section class="content-section" id="scenarios">
+        <div class="content-container">
+            <h2>Three Scenarios for 2030</h2>
             
             <div class="scenario-buttons">
-                <button class="scenario-btn active" onclick="switchScenario(0)">Scenario 1: Slowdown</button>
-                <button class="scenario-btn" onclick="switchScenario(1)">Scenario 2: Race</button>
+                <button class="scenario-btn active" onclick="switchScenario(0)">Baseline</button>
+                <button class="scenario-btn" onclick="switchScenario(1)">Upside</button>
+                <button class="scenario-btn" onclick="switchScenario(2)">Downside</button>
             </div>
 
-            <div class="scenario-content">
-                <div class="scenario" id="scenario-0" style="display: block;">
-                    <h3>"Slowdown" Scenario</h3>
-                    <p><strong>Development Speed:</strong> Gradual, controlled progress</p>
-                    <p><strong>Government Oversight:</strong> Strict and mandatory</p>
-                    <p><strong>International Cooperation:</strong> High, with binding treaties</p>
-                    <p><strong>AGI Capability:</strong> 2027-2028</p>
-                    <p><strong>Advantages:</strong> Lower risks, time for preparation and safety measures</p>
-                    <p><strong>Challenges:</strong> Requires strong global cooperation and coordination</p>
-                </div>
+            <!-- Baseline Scenario -->
+            <div class="scenario" id="scenario-0" style="display: block;">
+                <div class="scenario-box">
+                    <h3>Baseline: AI-Augmented Logistics</h3>
+                    <div class="scenario-summary">
+                        <strong style="color: #5a67d8;">Key Outcome:</strong> Moderately more productive and more concentrated industry with gradual widening of inequalities.
+                    </div>
+                    
+                    <div class="scenario-detail">
+                        <h4>At the Firm Level</h4>
+                        <p>AI-enabled predictive analytics, warehouse automation, and route optimisation become standard operational tools across the logistics sector, yet value remains concentrated among hyperscalers. Diffusion lags as data readiness, integration, and skills shortages continue to constrain adoption, resulting in productivity gains emerging gradually rather than through sudden disruption.</p>
+                    </div>
 
-                <div class="scenario" id="scenario-1">
-                    <h3>"Race" Scenario</h3>
-                    <p><strong>Development Speed:</strong> Extremely rapid acceleration</p>
-                    <p><strong>Government Oversight:</strong> Minimal and reactive</p>
-                    <p><strong>International Cooperation:</strong> Low, with conflicts</p>
-                    <p><strong>AGI Capability:</strong> 2026-2027</p>
-                    <p><strong>Advantages:</strong> Rapid progress, potential economic benefits</p>
-                    <p><strong>Challenges:</strong> Higher risks, major economic disruptions, geopolitical tensions</p>
+                    <div class="scenario-detail">
+                        <h4>At the Labour Level</h4>
+                        <p>Displacement is partial and uneven, cushioned by persistent labour shortages that absorb some workers released by automation. As routine roles decline and technical roles grow, governments implement moderate retraining initiatives that help some displaced workers transition.</p>
+                    </div>
+
+                    <div class="scenario-detail">
+                        <h4>At the Global Level</h4>
+                        <p>Regionalisation proceeds steadily as coordination costs fall and automation reduces dependence on labour-cost arbitrage; the offshore base erodes gradually rather than collapsing, while policy remains reactive rather than anticipatory.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Upside Scenario -->
+            <div class="scenario" id="scenario-1">
+                <div class="scenario-box upside">
+                    <h3>Upside: Autonomous Supply Networks</h3>
+                    <div class="scenario-summary" style="background: #f0fdf4; border-color: #86efac;">
+                        <strong style="color: #16a34a;">Key Outcome:</strong> AI becomes a source of widespread prosperity with accessible technology, full employment, and developing-economy participation.
+                    </div>
+                    
+                    <div class="scenario-detail">
+                        <h4>At the Firm Level</h4>
+                        <p>Advances in agentic AI systems combine with wider access to data, cloud infrastructure, and affordable automation tools, lowering adoption barriers for small- and mid-sized firms. Competition and interoperability rules keep markets contestable, allowing smaller firms to compete rather than merely adapt.</p>
+                    </div>
+
+                    <div class="scenario-detail">
+                        <h4>At the Labour Level</h4>
+                        <p>Governments successfully manage labour-market transition through large-scale investment in reskilling programmes. New occupations emerge quickly enough to absorb displaced workers into higher-value roles, preventing large-scale unemployment and limiting the widening of the productivity–wage gap.</p>
+                    </div>
+
+                    <div class="scenario-detail">
+                        <h4>At the Global Level</h4>
+                        <p>Developing economies gain access to the same tools as advanced economies, allowing them to move up the value chain rather than simply losing their cost advantage. This creates a more productive and resilient logistics system while consumers benefit from lower prices, faster delivery and greater product availability.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Downside Scenario -->
+            <div class="scenario" id="scenario-2">
+                <div class="scenario-box downside">
+                    <h3>Downside: Concentrated and Fragile Logistics</h3>
+                    <div class="scenario-summary" style="background: #fef2f2; border-color: #fca5a5;">
+                        <strong style="color: #dc2626;">Key Outcome:</strong> Technological success but significant economic and social challenges with concentrated gains and widespread displacement.
+                    </div>
+                    
+                    <div class="scenario-detail">
+                        <h4>At the Firm Level</h4>
+                        <p>Data scale becomes the critical source of competitive advantage, pushing the concentration channel to its extreme. Incumbents capture most productivity gains and increase barriers to entry as smaller firms struggle to replicate the datasets, computing infrastructure, and capital investment required to compete. This results in a winner-take-most market.</p>
+                    </div>
+
+                    <div class="scenario-detail">
+                        <h4>At the Labour Level</h4>
+                        <p>Displacement accelerates as automation displaces routine workers faster than new roles emerge. Labour's wage share falls sharply and inequality widens. More than 92 million roles could be displaced by emerging technologies by 2030, highlighting the scale of disruption if transition policies fail to keep pace.</p>
+                    </div>
+
+                    <div class="scenario-detail">
+                        <h4>At the Global Level</h4>
+                        <p>Developing economies that relied on labour-cost arbitrage experience declining participation in global supply chains, deepening economic divergence between advanced and developing economies. Logistics networks become more productive but also more concentrated, widening inequality between dominant platforms and smaller firms.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- About Section -->
-    <section class="about-section" id="about">
-        <div class="container">
-            <h2>About This Project</h2>
+    <!-- Policy Playbook Section -->
+    <section class="content-section" id="policy">
+        <div class="content-container">
+            <h2>Policy Playbook</h2>
+            <p style="margin-bottom: 40px; font-size: 1.1rem; color: #4a5568;">Three strategic policy levers to shape the distribution of AI gains in logistics:</p>
             
-            <p>This report is based on the real-world AI forecast from <strong>ai-2027.com</strong> by Daniel Kokotajlo, Scott Alexander, Thomas Larsen, Eli Lifland, and Romeo Dean.</p>
+            <div class="policy-card">
+                <h3>1. Competition and Data Access Policy</h3>
+                <p><strong>Responsibility:</strong> ACCC, European Commission, data-protection authorities, governments, major platforms</p>
+                <p><strong>When:</strong> Early / pre-emptive, before data lock-in becomes entrenched</p>
+                <p>Because AI performance relies on data scale, large firms can leverage this advantage to capture markets while creating barriers to entry for smaller competitors. Government should treat data scale as a source of market power and restore contestability through interoperability and portability requirements. Regulators must act decisively before lock-in becomes entrenched, while carefully calibrating rules so they do not deter investment and innovation.</p>
+            </div>
+
+            <div class="policy-card">
+                <h3>2. Workforce Transition and Reskilling Programmes</h3>
+                <p><strong>Responsibility:</strong> Governments, Department of Employment, TAFE, universities, firms, unions</p>
+                <p><strong>When:</strong> Before and during automation rollout</p>
+                <p>As AI automation raises productivity by substituting for routine warehouse and logistics tasks, workers are displaced faster than new technical roles are created. Reskilling programmes should be sector-specific, targeted at workers most exposed to automation, and linked to real jobs in robotics maintenance, data analytics, systems supervision, and logistics coordination. Reskilling must be paired with wage insurance and labour protection and deployed before displacement accelerates.</p>
+            </div>
+
+            <div class="policy-card">
+                <h3>3. Global Adjustment and Inclusive Supply Chains</h3>
+                <p><strong>Responsibility:</strong> WTO, UNCTAD, World Bank, development-finance institutions, governments</p>
+                <p><strong>When:</strong> Early and long-term, before global divergence becomes entrenched</p>
+                <p>As competitiveness shifts from cheap labour towards data, technology, and capital, developing economies that relied on labour-cost arbitrage face exclusion rather than simple adjustment. Policy must prevent developing economies from being locked out of AI-enabled trade participation through technology transfer, development finance, and fair trade rules. Advanced economies must commit to joint cross-border initiatives that create mutual benefits.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Methods & Conclusion Section -->
+    <section class="content-section">
+        <div class="content-container">
+            <h2>Methods & Key Insights</h2>
             
-            <h3>Purpose</h3>
-            <ul>
-                <li>Provide concrete forecasts about AI's development trajectory during 2025-2027</li>
-                <li>Explore AI's impacts on society, economy, and geopolitics</li>
-                <li>Present two plausible scenarios: "Slowdown" and "Race"</li>
-                <li>Foster dialogue about preparing for rapid AI progress</li>
-            </ul>
+            <div class="methods-box">
+                <h3>Forecast Approach</h3>
+                <p>This forecast uses a scenario-based approach examining how AI may reshape global logistics by 2030, drawing on peer-reviewed economic theory including the task model of automation, transaction-cost economics, the economics of data, and global value-chain research, combined with industry and institutional sources.</p>
+                
+                <h3>Central Assumption</h3>
+                <p>AI adoption continues to expand from pilot projects into operational systems, particularly through predictive analytics, warehouse automation, route optimisation, and autonomous coordination tools. The forecast is structured around three causal channels: firm-level productivity and concentration, labour-market displacement, and supply-chain geography.</p>
 
-            <h3>Technology Stack</h3>
-            <p>This website is built using HTML5, CSS3, and vanilla JavaScript with Canvas API for interactive charts and animations.</p>
-
-            <h3>Key Links</h3>
-            <ul>
-                <li><a href="https://ai-2027.com/" target="_blank">📖 Read the full report at ai-2027.com</a></li>
-                <li><a href="https://ai-2027.com/research" target="_blank">🔬 View detailed research</a></li>
-                <li><a href="https://ai-2027.com/about" target="_blank">👥 Learn about the authors</a></li>
-            </ul>
+                <h3>Key Finding</h3>
+                <p style="font-size: 1.15rem; color: #1a202c; font-weight: 600; margin-top: 30px; padding: 20px; background: #f0f4ff; border-left: 4px solid #5a67d8;">
+                    AI will make logistics more productive by 2030, but productivity alone does not guarantee broad prosperity. Without policy intervention, gains will concentrate among data-rich firms, capital owners, and advanced economies. The central challenge is whether institutions can make those gains contestable, inclusive, and resilient.
+                </p>
+            </div>
         </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <p>&copy; 2026 AI Futures Project. Based on content from <strong>ai-2027.com</strong></p>
-            <p style="margin-top: 10px; font-size: 0.9rem; opacity: 0.8;">The forecasts presented in this report are based on current information and represent one plausible future among many possible scenarios.</p>
+        <div class="footer-content">
+            <p><strong>Disclaimer:</strong> The forecasts presented in this report are based on current information and represent one plausible future among many possible scenarios.</p>
+            <p style="margin-top: 20px; font-size: 0.9rem; opacity: 0.8;">Generative AI tools were used to support structure, coding, revising, and visual design. The final argument, evidence selection, and policy judgement were reviewed and edited by the author.</p>
         </div>
     </footer>
 
     <!-- Scripts -->
     <script src="main-chart.js"></script>
-    
     <script>
-        // Timeline switching
+        function scrollToSection(id) {
+            const element = document.getElementById(id);
+            if (element) {
+                element.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+
+        function switchScenario(scenario) {
+            document.querySelectorAll('.scenario').forEach(el => el.style.display = 'none');
+            document.getElementById(`scenario-${scenario}`).style.display = 'block';
+            
+            document.querySelectorAll('.scenario-btn').forEach((btn, idx) => {
+                btn.classList.toggle('active', idx === scenario);
+            });
+        }
+
         function switchTimeline(phase) {
             // Hide all phases
             document.querySelectorAll('.timeline-phase').forEach(el => el.style.display = 'none');
@@ -359,34 +432,16 @@
             document.querySelectorAll('.timeline-btn').forEach((btn, idx) => {
                 btn.classList.toggle('active', idx === phase);
             });
-            
-            // Initialize chart for this phase
-            setTimeout(() => {
-                new AnimatedChart(`phase-${phase}-chart`, phase);
-            }, 50);
         }
 
-        // Scenario switching
-        function switchScenario(scenario) {
-            document.querySelectorAll('.scenario').forEach(el => el.style.display = 'none');
-            document.getElementById(`scenario-${scenario}`).style.display = 'block';
-            
-            document.querySelectorAll('.scenario-btn').forEach((btn, idx) => {
-                btn.classList.toggle('active', idx === scenario);
-            });
+        function updateMainChart(phase) {
+            // This function can be used to update the main chart when timeline changes
+            console.log('Timeline switched to phase:', phase);
         }
 
-        // Smooth scroll
-        function scrollToSection(id) {
-            const element = document.getElementById(id);
-            if (element) {
-                element.scrollIntoView({ behavior: 'smooth' });
-            }
-        }
-
-        // Initialize first phase chart when page loads
+        // Initialize when page loads
         window.addEventListener('load', () => {
-            new AnimatedChart('phase-0-chart', 0);
+            console.log('Page loaded - Timeline ready');
         });
     </script>
 </body>
